@@ -7,6 +7,7 @@
   </head>
   <body>
     <main class="main">
+      <div class="currency" title="Изменить валюту" id="change-currency">$</div>
       <header class="header">
         <div class="container">
           <div class="Logo">
@@ -65,7 +66,7 @@
                 </div>
                 <div class="products-item-extra">
                   <div class="products-item-info">
-                    <div class="products-item-price">20 $</div>
+                    <div class="products-item-price" data-base-price="20">20 $</div>
                     <div class="products-item-weight">2 шт./ 200 гр.</div>
                   </div>
                   <button class="button violet-button">Заказать</button>
@@ -85,7 +86,7 @@
                 </div>
                 <div class="products-item-extra">
                   <div class="products-item-info">
-                    <div class="products-item-price">24 $</div>
+                    <div class="products-item-price" data-base-price="24">24 $</div>
                     <div class="products-item-weight">2 шт./ 200 гр.</div>
                   </div>
                   <button class="button violet-button">Заказать</button>
@@ -105,7 +106,7 @@
                 </div>
                 <div class="products-item-extra">
                   <div class="products-item-info">
-                    <div class="products-item-price">18 $</div>
+                    <div class="products-item-price" data-base-price="18">18 $</div>
                     <div class="products-item-weight">2 шт./ 200 гр.</div>
                   </div>
                   <button class="button violet-button">Заказать</button>
@@ -125,7 +126,7 @@
                 </div>
                 <div class="products-item-extra">
                   <div class="products-item-info">
-                    <div class="products-item-price">24 $</div>
+                    <div class="products-item-price" data-base-price="24">24 $</div>
                     <div class="products-item-weight">2 шт./ 200 гр.</div>
                   </div>
                   <button class="button violet-button">Заказать</button>
@@ -147,7 +148,7 @@
                 </div>
                 <div class="products-item-extra">
                   <div class="products-item-info">
-                    <div class="products-item-price">20 $</div>
+                    <div class="products-item-price" data-base-price="20">20 $</div>
                     <div class="products-item-weight">2 шт./ 200 гр.</div>
                   </div>
                   <button class="button violet-button">Заказать</button>
@@ -168,7 +169,7 @@
                 </div>
                 <div class="products-item-extra">
                   <div class="products-item-info">
-                    <div class="products-item-price">18 $</div>
+                    <div class="products-item-price" data-base-price="18">18 $</div>
                     <div class="products-item-weight">2 шт./ 200 гр.</div>
                   </div>
                   <button class="button violet-button">Заказать</button>
@@ -188,7 +189,7 @@
                 </div>
                 <div class="products-item-extra">
                   <div class="products-item-info">
-                    <div class="products-item-price">36 $</div>
+                    <div class="products-item-price" data-base-price="36">36 $</div>
                     <div class="products-item-weight">4 шт./ 400 гр.</div>
                   </div>
                   <button class="button violet-button">Заказать</button>
@@ -207,7 +208,7 @@
                 </div>
                 <div class="products-item-extra">
                   <div class="products-item-info">
-                    <div class="products-item-price">33 $</div>
+                    <div class="products-item-price" data-base-price="33">33 $</div>
                     <div class="products-item-weight">4 шт./ 400 гр.</div>
                   </div>
                   <button class="button violet-button">Заказать</button>
@@ -227,7 +228,7 @@
                 </div>
                 <div class="products-item-extra">
                   <div class="products-item-info">
-                    <div class="products-item-price">38 $</div>
+                    <div class="products-item-price" data-base-price="38">38 $</div>
                     <div class="products-item-weight">4 шт./ 400 гр.</div>
                   </div>
                   <button class="button violet-button">Заказать</button>
@@ -247,7 +248,7 @@
                 </div>
                 <div class="products-item-extra">
                   <div class="products-item-info">
-                    <div class="products-item-price">33 $</div>
+                    <div class="products-item-price" data-base-price="33">33 $</div>
                     <div class="products-item-weight">4 шт./ 400 гр.</div>
                   </div>
                   <button class="button violet-button">Заказать</button>
@@ -269,7 +270,7 @@
                 </div>
                 <div class="products-item-extra">
                   <div class="products-item-info">
-                    <div class="products-item-price">39 $</div>
+                    <div class="products-item-price" data-base-price="39">39 $</div>
                     <div class="products-item-weight">4 шт./ 400 гр.</div>
                   </div>
                   <button class="button violet-button">Заказать</button>
@@ -292,7 +293,7 @@
                 </div>
                 <div class="products-item-extra">
                   <div class="products-item-info">
-                    <div class="products-item-price">35 $</div>
+                    <div class="products-item-price" data-base-price="35">35 $</div>
                     <div class="products-item-weight">4 шт./ 400 гр.</div>
                   </div>
                   <button class="button violet-button">Заказать</button>
@@ -342,10 +343,10 @@
                 Закажите прямо сейчас и окунитесь в мир сладких наслаждений.
               </div>
               <div class="order-form-inputs">
-                <input type="text" placeholder="Выберите печенье" />
-                <input type="text" placeholder="Ваше имя" />
-                <input type="text" placeholder="Ваш телефон" />
-                <button class="button violet-button">Оформить заказ</button>
+                <input type="text" placeholder="Выберите печенье" id="product"/>
+                <input type="text" placeholder="Ваше имя" id="name"/>
+                <input type="text" placeholder="Ваш телефон" id="phone" />
+                <button class="button violet-button" id="order-action">Оформить заказ</button>
               </div>
             </div>
             <div class="order-block-image">
